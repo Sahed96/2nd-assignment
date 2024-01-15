@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap');
 
 :root{
     max-width: 1220px;
@@ -106,18 +106,20 @@ nav{
     bottom: 4rem;
     left: 50%;
     transform: translateX(-50%);
-    width: calc(100% - 4rem);
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 1rem;
     padding: 2rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
 
 }
 .booking-container form{
     width: 100%;
     flex: 1;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
     gap: 1rem;
 }
 .booking-container .input-group{
@@ -136,12 +138,12 @@ nav{
     background: #fff;
 }
 .booking-container input{
-    width: 100%;
+    width: 50%;
     padding: 10px ;
     font-size: 1rem;
     outline: none;
     border: none;
-    border-radius: 8px;
+    border-radius: 0.3rem;
  
 
 }
@@ -161,16 +163,41 @@ nav{
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
-}
+}   
 
 .popular-img{
-    width: 80%;
+    width: 540px;
+    height: 550px;
+    padding-top: 3rem;
+    border-radius: 1rem;
+    
 }
+.popular-content{
+    width: 50%;
+}
+
 
 .popular-content h2{
     font-size: 2.5rem;
     font-weight: 800;
     color: #131318;
+}
+
+.popular-content p{
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+
+.popular-content li{
+    margin-left: 1rem;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
 }
 
 .popular-description .btn{
