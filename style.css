@@ -65,3 +65,153 @@ nav{
 .link a:hover{
     color: coral;
 }
+
+.header-container{
+    padding: 1rem 1rem 5rem 1rem;
+}
+
+.header-img-container{
+    position: relative;
+    min-height: 500px;
+    border-radius: 16px;
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("Images/Group\ 13.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-content{
+    width: 100%;
+    padding: 7rem ;
+    text-align: center;
+    align-items: center;
+    
+
+}
+.header-content h1{
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    line-height: normal;
+    font-weight: 800;
+    color: #fff;
+}
+.header-content p{
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    
+}
+.booking-container{
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 4rem);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+
+}
+.booking-container form{
+    width: 100%;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.booking-container .input-group{
+    width: 100%;
+    position: relative;
+    
+ 
+}
+.booking-container label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    font-weight: 400;
+    background: #fff;
+}
+.booking-container input{
+    width: 100%;
+    padding: 10px ;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+ 
+
+}
+.booking-container .btn{
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #FF5400;
+    border-radius: 8px;
+    gap: 5px;
+}
+
+.popular-description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.popular-img{
+    width: 80%;
+}
+
+.popular-content h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #131318;
+}
+
+.popular-description .btn{
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1.3rem;
+    color: #fff;
+    background-color: #FF5400;
+    border-radius: 8px;
+    gap: 5px;
+}
+
+
+
+
+
+
+
+
+/* responsive starts here  */
+
+@media screen and (max-width: 600px) {
+    .nav-links{
+        display: none;
+    }
+
+    .header-container{
+        padding-bottom: 25rem;
+    }
+
+    .booking-container{
+        flex-direction: column;
+        bottom: -25rem;
+    }
+
+    .booking-container form{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
+    
+}
