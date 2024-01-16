@@ -107,7 +107,7 @@ nav{
     bottom: 4rem;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -222,6 +222,18 @@ nav{
     text-align: center;
 }
 
+.destination-content h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #131318;
+}
+
+.destination-content p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(19, 19, 24, 0.70);;
+}
+
 .img-container{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -260,6 +272,112 @@ nav{
     grid-column: 6/span 7;
 }
 
+.choose-container{
+    margin-top: 3rem;
+    text-align: center;
+    
+}
+
+.choose-content h2{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #131318;
+}
+
+.choose-content p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.box-item{
+   
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+    padding-top: 3rem;
+}
+
+.box-1 img{
+    width: 4rem;
+    height: 4rem;
+}
+.box-2 img{
+    width: 4rem;
+    height: 4rem;
+}
+.box-3 img{
+    width: 4rem;
+    height: 4rem;
+}
+.box-1{
+    width: 573px;
+    height: 284px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+    text-align: left;
+    padding: 32px;
+    grid-column: 1/span 6;
+    
+}
+.box-2{
+    width: 573px;
+    height: 284px;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+    text-align: left;
+    padding: 32px;
+    grid-column: 7/span 6;
+    
+}
+.box-3{
+    width: 573px;
+    height: 284px;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    text-align: left;
+    padding: 32px;
+    grid-column: 4/span 6;
+    
+}
+
+.box-1 h3{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #131318;
+}
+.box-2 h3{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #131318;
+}
+.box-3 h3{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #131318;
+}
+.box-1 p{
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.box-2 p{
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+.box-3 p{
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 
 
 
@@ -284,11 +402,35 @@ nav{
 
     .booking-container{
         flex-direction: column;
+        width: 100%;
         bottom: -25rem;
     }
 
     .booking-container form{
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .gallary{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .popular-description{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .destination-container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .gallary{
+        flex-direction: column;
+    }
+
+    .img-container{
+        flex-direction: column;
     }
 
 
