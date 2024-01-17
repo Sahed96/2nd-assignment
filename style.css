@@ -124,29 +124,31 @@ nav{
 
 }
 .booking-container form{
-    width: 100%;
+    width: 0 auto;
     flex: 1;
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     gap: 1rem;
 }
-.booking-container .input-group{
-    width: 100%;
-    position: relative;
+
+select{
+    padding: 10px;
+    width: 33%;
+}
     
  
 }
-.booking-container label{
+.booking-container select{
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 40%;
     transform: translateY(-50%);
     font-size: 1rem;
     font-weight: 400;
     background: #fff;
 }
 .booking-container input{
-    width: 50%;
+    width: 33%;
     padding: 10px ;
     font-size: 1rem;
     outline: none;
@@ -518,7 +520,11 @@ hr{
 /* responsive starts here  */
 
 @media screen and (max-width: 600px) {
-    .nav-links{
+    .navbar{
+        flex-direction: column;
+    }
+    
+    .nav-links li{
         display: none;
         flex-direction: column;
         position: absolute;
@@ -531,7 +537,7 @@ hr{
     .booking-container{
         flex-direction: column;
         width: 100%;
-        bottom: -25rem;
+        bottom: 25rem;
     }
 
     .booking-container form{
@@ -571,12 +577,8 @@ hr{
         margin-right: 50px;
         margin-top: 20px;
    }
-
-   .choose-container{
-       
-   }
    .box-item{
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 2rem;
     padding-top: 3rem;
